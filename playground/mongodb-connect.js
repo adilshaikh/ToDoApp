@@ -25,7 +25,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp',(err, client)=>{
     },(err, result)=>{
         if (err){
             return console.log('Unable to write the DB', err)
-        }console.log(JSON.stringify(result.ops, undefined, 2)) //result.ops array of documents that get inserted.
+        }console.log(JSON.stringify(result, undefined, 2)) //result.ops array of documents that get inserted.
         client.close();
     })
     

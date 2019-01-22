@@ -5,12 +5,12 @@ var Todo = mongoose.model('ToDos', ({
         required: true, 
         minlength: 1, 
         trim: true},
-    commpleted:  {
+    completed:  {
         type: Boolean,
         default: false
     },
     completedAt: {
-        type: Number,
+        type: String,
         default: null
         }
 })
